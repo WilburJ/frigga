@@ -10,6 +10,8 @@ require 'frigga/talk'
 module Frigga
 
   class WebServer < Sinatra::Base
+    register Sinatra::HTTPAuth
+    http_basic_authenticate_with :name => "foo", :password => "bar"
     configure do
       set :public_folder, Proc.new { File.join(File.expand_path(""), "static") }
       set :views, Proc.new { File.join(File.expand_path(""), "views") }
@@ -18,19 +20,14 @@ module Frigga
       set :bind => '0.0.0.0'
       set :show_exceptions => false
     end
-    
-    before '*' do
-      if request.ip == '127.0.0.1'
-        puts "match ip"
-      else
+    use Rack::Auth::Basic, "Protected Area" do |username, password|
+      username == 'foo' && password == 'bar'
+    end
 
-        use Rack::Auth::Basic, "Protected Area" do |username, password|
-          username == 'foo' && password == 'bar'
-        end
-      end
-      #puts request.path_info
-      #puts request.ip
-      #puts GOD_SOCK
+    before '*' do
+      # if request.ip == '127.0.0.1'
+      #   puts "match ip"
+      # end
       @ver = VER
     end
 
@@ -49,30 +46,7 @@ module Frigga
         session[:notice] = nil
       end
       puts "do it"
-      hi = Frigga::Talk_to.god('status')
-      puts hi
-      @process = []
-      
-      unless hi.nil? || hi.empty?
-        hi.each do |k, v|
-          next if k =~ /Frigga/i
-          start_time = ""
-          status = v[:state] == :up ? 'running' : (v[:state] == :unmonitored ? 'stop' : 'something wrong!')
-          pid = v.fetch :pid, nil
-          if v[:state] == :up
-            if ! pid.nil? && File.exist?("/proc/#{pid}")
-              jiffies =  IO.read("/proc//#{pid}/stat").split(/\s/)[21].to_i
-              uptime = IO.readlines("/proc/stat").find {|t| t =~ /^btime/ }.split(/\s/)[1].strip.to_i
-              start_time = Time.at(uptime + jiffies / 100).strftime("%Y-%m-%d %H:%M:%S")
-            else
-              status = 'flapping'
-              start_time = "Can't find pid:#{pid}"
-            end
-              
-          end
-          @process << [k, status, start_time, v[:start], pid]
-        end
-      end
+      @process = Frigga::Talk_to.god('status')    
       erb :index
     end
 

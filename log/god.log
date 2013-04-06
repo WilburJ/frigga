@@ -7962,3 +7962,231 @@ I [2013-04-06 20:32:32]  INFO: frigga sent SIGTERM
 I [2013-04-06 20:32:32]  INFO: frigga process stopped
 I [2013-04-06 20:32:32]  INFO: frigga move 'up' to 'unmonitored'
 I [2013-04-06 20:32:32]  INFO: frigga moved 'up' to 'unmonitored'
+I [2013-04-06 20:53:20]  INFO: Loading /home/wilbur/dev/frigga/conf/base.god
+
+***********************************************************************
+*
+* Event conditions are not available for your installation of god.
+* You may still use and write custom conditions using the poll system
+*
+***********************************************************************
+
+I [2013-04-06 20:53:20]  INFO: Syslog disabled.
+I [2013-04-06 20:53:20]  INFO: Using pid file directory: /var/run/god
+I [2013-04-06 20:53:20]  INFO: Started on drbunix:///tmp/god.17165.sock
+I [2013-04-06 20:53:20]  INFO: frigga Loaded config
+I [2013-04-06 20:53:20]  INFO: frigga move 'unmonitored' to 'up'
+I [2013-04-06 20:53:20]  INFO: frigga moved 'unmonitored' to 'up'
+I [2013-04-06 20:53:20]  INFO: frigga [trigger] process is not running (ProcessRunning)
+I [2013-04-06 20:53:20]  INFO: frigga move 'up' to 'start'
+I [2013-04-06 20:53:20]  INFO: frigga before_start: deleted pid file (CleanPidFile)
+I [2013-04-06 20:53:20]  INFO: frigga start: ruby /home/wilbur/dev/frigga/bin/frigga.rb
+I [2013-04-06 20:53:20]  INFO: frigga moved 'up' to 'up'
+I [2013-04-06 20:53:21]  INFO: hi Loaded config
+I [2013-04-06 20:53:21]  INFO: hi move 'unmonitored' to 'up'
+I [2013-04-06 20:53:21]  INFO: hi moved 'unmonitored' to 'up'
+I [2013-04-06 20:53:21]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 20:53:21]  INFO: hi move 'up' to 'start'
+I [2013-04-06 20:53:21]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 20:53:21]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 20:53:21]  INFO: hello Loaded config
+I [2013-04-06 20:53:21]  INFO: hello move 'unmonitored' to 'up'
+I [2013-04-06 20:53:21]  INFO: hello moved 'unmonitored' to 'up'
+I [2013-04-06 20:53:21]  INFO: hello [trigger] process is not running (ProcessRunning)
+I [2013-04-06 20:53:21]  INFO: hello move 'up' to 'start'
+I [2013-04-06 20:53:21]  INFO: hello start: ruby /home/wilbur/dev/frigga/bin/hello.rb
+I [2013-04-06 20:53:21]  INFO: hello moved 'up' to 'up'
+I [2013-04-06 20:53:26]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 20:53:26]  INFO: hi move 'up' to 'start'
+I [2013-04-06 20:53:26]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 20:53:26]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 20:53:31]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 20:53:31]  INFO: hi move 'up' to 'start'
+I [2013-04-06 20:53:31]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 20:53:31]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 20:53:36]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 20:53:36]  INFO: hi move 'up' to 'start'
+I [2013-04-06 20:53:36]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 20:53:36]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 20:53:41]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 20:53:41]  INFO: hi move 'up' to 'start'
+I [2013-04-06 20:53:41]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 20:53:41]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 20:53:42]  INFO: hi [ok] process is flapping (Flapping)
+I [2013-04-06 20:53:42]  INFO: hi move 'up' to 'unmonitored'
+I [2013-04-06 20:53:42]  INFO: hi moved 'up' to 'unmonitored'
+I [2013-04-06 20:53:42]  INFO: hi auto-reenable monitoring in 600 seconds
+I [2013-04-06 21:01:05]  INFO: frigga stop: default lambda killer
+I [2013-04-06 21:01:05]  INFO: frigga sent SIGTERM
+I [2013-04-06 21:01:05]  INFO: frigga process stopped
+I [2013-04-06 21:01:05]  INFO: frigga move 'up' to 'unmonitored'
+I [2013-04-06 21:01:05]  INFO: frigga moved 'up' to 'unmonitored'
+I [2013-04-06 21:01:08]  INFO: Loading /home/wilbur/dev/frigga/conf/base.god
+
+***********************************************************************
+*
+* Event conditions are not available for your installation of god.
+* You may still use and write custom conditions using the poll system
+*
+***********************************************************************
+
+I [2013-04-06 21:01:08]  INFO: Syslog disabled.
+I [2013-04-06 21:01:08]  INFO: Using pid file directory: /var/run/god
+I [2013-04-06 21:01:08]  INFO: Started on drbunix:///tmp/god.17165.sock
+I [2013-04-06 21:01:08]  INFO: frigga Loaded config
+I [2013-04-06 21:01:08]  INFO: frigga move 'unmonitored' to 'up'
+I [2013-04-06 21:01:08]  INFO: frigga moved 'unmonitored' to 'up'
+I [2013-04-06 21:01:08]  INFO: frigga [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:01:08]  INFO: frigga move 'up' to 'start'
+I [2013-04-06 21:01:08]  INFO: frigga before_start: deleted pid file (CleanPidFile)
+I [2013-04-06 21:01:08]  INFO: frigga start: ruby /home/wilbur/dev/frigga/bin/frigga.rb
+I [2013-04-06 21:01:08]  INFO: frigga moved 'up' to 'up'
+I [2013-04-06 21:01:08]  INFO: hi Loaded config
+I [2013-04-06 21:01:08]  INFO: hi move 'unmonitored' to 'up'
+I [2013-04-06 21:01:08]  INFO: hi moved 'unmonitored' to 'up'
+I [2013-04-06 21:01:08]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:01:08]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:01:08]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:01:08]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:01:09]  INFO: hello Loaded config
+I [2013-04-06 21:01:09]  INFO: hello move 'unmonitored' to 'up'
+I [2013-04-06 21:01:09]  INFO: hello moved 'unmonitored' to 'up'
+I [2013-04-06 21:01:13]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:01:13]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:01:13]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:01:13]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:01:19]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:01:19]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:01:19]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:01:19]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:01:21]  INFO: hi stop: default lambda killer
+I [2013-04-06 21:01:21]  INFO: hi sent SIGTERM
+I [2013-04-06 21:01:21]  INFO: hi process stopped
+I [2013-04-06 21:01:21]  INFO: hi move 'up' to 'unmonitored'
+I [2013-04-06 21:01:21]  INFO: hi moved 'up' to 'unmonitored'
+I [2013-04-06 21:01:26]  INFO: hello move 'up' to 'restart'
+I [2013-04-06 21:01:26]  INFO: hello stop: default lambda killer
+I [2013-04-06 21:01:26]  INFO: hello sent SIGTERM
+I [2013-04-06 21:01:26]  INFO: hello process stopped
+I [2013-04-06 21:01:26]  INFO: hello start: ruby /home/wilbur/dev/frigga/bin/hello.rb
+I [2013-04-06 21:01:26]  INFO: hello moved 'up' to 'up'
+I [2013-04-06 21:06:29]  INFO: frigga stop: default lambda killer
+I [2013-04-06 21:06:29]  INFO: frigga sent SIGTERM
+I [2013-04-06 21:06:29]  INFO: frigga process stopped
+I [2013-04-06 21:06:29]  INFO: frigga move 'up' to 'unmonitored'
+I [2013-04-06 21:06:29]  INFO: frigga moved 'up' to 'unmonitored'
+I [2013-04-06 21:06:31]  INFO: Loading /home/wilbur/dev/frigga/conf/base.god
+
+***********************************************************************
+*
+* Event conditions are not available for your installation of god.
+* You may still use and write custom conditions using the poll system
+*
+***********************************************************************
+
+I [2013-04-06 21:06:31]  INFO: Syslog disabled.
+I [2013-04-06 21:06:31]  INFO: Using pid file directory: /var/run/god
+I [2013-04-06 21:06:31]  INFO: Started on drbunix:///tmp/god.17165.sock
+I [2013-04-06 21:06:31]  INFO: frigga Loaded config
+I [2013-04-06 21:06:31]  INFO: frigga move 'unmonitored' to 'up'
+I [2013-04-06 21:06:31]  INFO: frigga moved 'unmonitored' to 'up'
+I [2013-04-06 21:06:31]  INFO: frigga [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:06:31]  INFO: frigga move 'up' to 'start'
+I [2013-04-06 21:06:31]  INFO: frigga before_start: deleted pid file (CleanPidFile)
+I [2013-04-06 21:06:31]  INFO: frigga start: ruby /home/wilbur/dev/frigga/bin/frigga.rb
+I [2013-04-06 21:06:31]  INFO: frigga moved 'up' to 'up'
+I [2013-04-06 21:06:31]  INFO: hi Loaded config
+I [2013-04-06 21:06:31]  INFO: hi move 'unmonitored' to 'up'
+I [2013-04-06 21:06:31]  INFO: hi moved 'unmonitored' to 'up'
+I [2013-04-06 21:06:31]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:06:31]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:06:31]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:06:32]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:06:32]  INFO: hello Loaded config
+I [2013-04-06 21:06:32]  INFO: hello move 'unmonitored' to 'up'
+I [2013-04-06 21:06:32]  INFO: hello moved 'unmonitored' to 'up'
+I [2013-04-06 21:06:37]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:06:37]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:06:37]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:06:37]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:06:42]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:06:42]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:06:42]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:06:42]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:06:42]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:06:42]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:06:42]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:06:42]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:06:47]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:06:47]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:06:47]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:06:47]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:06:47]  INFO: hi [ok] process is flapping (Flapping)
+I [2013-04-06 21:06:47]  INFO: hi move 'up' to 'unmonitored'
+I [2013-04-06 21:06:47]  INFO: hi moved 'up' to 'unmonitored'
+I [2013-04-06 21:06:48]  INFO: hi auto-reenable monitoring in 600 seconds
+I [2013-04-06 21:07:30]  INFO: frigga stop: default lambda killer
+I [2013-04-06 21:07:30]  INFO: frigga sent SIGTERM
+I [2013-04-06 21:07:30]  INFO: frigga process stopped
+I [2013-04-06 21:07:30]  INFO: frigga move 'up' to 'unmonitored'
+I [2013-04-06 21:07:30]  INFO: frigga moved 'up' to 'unmonitored'
+I [2013-04-06 21:08:23]  INFO: hello move 'up' to 'restart'
+I [2013-04-06 21:08:23]  INFO: hello stop: default lambda killer
+I [2013-04-06 21:08:23]  INFO: hello sent SIGTERM
+I [2013-04-06 21:08:23]  INFO: hello process stopped
+I [2013-04-06 21:08:23]  INFO: hello start: ruby /home/wilbur/dev/frigga/bin/hello.rb
+I [2013-04-06 21:08:23]  INFO: hello moved 'up' to 'up'
+I [2013-04-06 21:16:48]  INFO: hi auto-reenabling monitoring
+I [2013-04-06 21:16:48]  INFO: hi move 'unmonitored' to 'up'
+I [2013-04-06 21:16:48]  INFO: hi moved 'unmonitored' to 'up'
+I [2013-04-06 21:16:48]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:16:48]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:16:48]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:16:48]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:16:53]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:16:53]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:16:53]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:16:53]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:16:58]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:16:58]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:16:58]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:16:58]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:17:03]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:17:03]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:17:03]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:17:03]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:17:08]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:17:08]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:17:08]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:17:08]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:17:09]  INFO: hi [ok] process is flapping (Flapping)
+I [2013-04-06 21:17:09]  INFO: hi move 'up' to 'unmonitored'
+I [2013-04-06 21:17:09]  INFO: hi moved 'up' to 'unmonitored'
+I [2013-04-06 21:17:09]  INFO: hi auto-reenable monitoring in 600 seconds
+I [2013-04-06 21:27:09]  INFO: hi auto-reenabling monitoring
+I [2013-04-06 21:27:09]  INFO: hi move 'unmonitored' to 'up'
+I [2013-04-06 21:27:09]  INFO: hi moved 'unmonitored' to 'up'
+I [2013-04-06 21:27:09]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:27:09]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:27:09]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:27:09]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:27:15]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:27:15]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:27:15]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:27:15]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:27:20]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:27:20]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:27:20]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:27:20]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:27:25]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:27:25]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:27:25]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:27:25]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:27:30]  INFO: hi [trigger] process is not running (ProcessRunning)
+I [2013-04-06 21:27:30]  INFO: hi move 'up' to 'start'
+I [2013-04-06 21:27:30]  INFO: hi start: ruby /home/wilbur/dev/frigga/bin/hidd.rb
+I [2013-04-06 21:27:30]  INFO: hi moved 'up' to 'up'
+I [2013-04-06 21:27:30]  INFO: hi [ok] process is flapping (Flapping)
+I [2013-04-06 21:27:30]  INFO: hi move 'up' to 'unmonitored'
+I [2013-04-06 21:27:30]  INFO: hi moved 'up' to 'unmonitored'
+I [2013-04-06 21:27:31]  INFO: hi auto-reenable monitoring in 600 seconds

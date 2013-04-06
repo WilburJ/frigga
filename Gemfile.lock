@@ -1,14 +1,9 @@
-GIT
-  remote: git://github.com/WilburJ/god-xiaomi.git
-  revision: 64073cbe9c9ce306e55fb217683b4c42d8a3f58b
-  specs:
-    god (1.13.2)
-
 GEM
   specs:
     builder (3.2.0)
     daemons (1.1.9)
     eventmachine (1.0.3)
+    god-xiaomi (1.13.2)
     rack (1.5.2)
     rack-protection (1.5.0)
       rack
@@ -30,7 +25,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  god!
+  god-xiaomi
   rack-rpc
   sinatra
   thin
