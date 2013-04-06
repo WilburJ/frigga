@@ -1,0 +1,45 @@
+<table class="table table-bordered table-hover table-condensed">
+<!--   <thead> -->
+    <tr class="info">
+      <td><strong>Process</strong></td>
+      <td><strong>Status</strong></td>
+      <td><strong>Start Time</strong></td>
+      <td><strong>Action</strong></td>
+    </tr>
+<!--   </thead>
+  <tbody> -->
+    <% @process.each do |i| %>
+      <tr>
+      <td>
+        <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="<%= i[3] %>"><%= i[0] %></a>
+      </td>
+      <td>
+        <% if i[1] == 'running' %>
+          <span class="label label-info"><%= i[1] %></span></td>
+        <% else %>
+          <span class="label label-warning"><%= i[1] %></span></td>
+        <% end %>
+      <td><%= i[2] %></td>
+      <td>
+        <% if i[1] == 'stop' %>
+          <form style="margin:0;display:inline;" action='/god/start' method='post'>
+          <input type="hidden" name="name" value='<%= i[0] %>' >
+          <input class="btn btn-small btn-info" type="submit" value='start' >
+          </form>   
+        <% else %>
+          <form style="margin:0;display:inline;" action='/god/stop' method='post'>
+          <input type="hidden" name="name" value='<%= i[0] %>' >
+          <input class="btn btn-small btn-danger" type="submit" value='stop' >
+          </form>   
+        <% end %>
+
+        <form style="margin:0;display:inline;" action='/god/restart' method='post'>
+        <input type="hidden" name="name" value='<%= i[0] %>' >
+        <input class="btn btn-small btn-warning" type="submit" value='restart' >
+        </form>
+  
+      </td>
+      <tr>
+    <% end %>
+<!--   </tbody> -->
+</table>

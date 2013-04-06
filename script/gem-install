@@ -1,0 +1,18 @@
+#!/bin/sh
+# Make sure all our local dependencies are available.
+
+set -e
+
+# FIX: only sudo if gem home isn't writable
+
+(gem spec bundler -v '~> 1.2.0' > /dev/null 2>&1) ||
+  sudo gem install bundler --no-rdoc --no-ri
+
+# We don't want old config hanging around.
+
+rm -rf .bundle
+
+# Bundle install unless we're already up to date.
+
+export PATH=$(pwd)/script/shims:$PATH
+bundle install --path .bundle --quiet "$@"
